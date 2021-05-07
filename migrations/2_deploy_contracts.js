@@ -1,6 +1,5 @@
-const MetaCoin = artifacts.require("MetaCoin");
+var TodoList = artifacts.require("./TodoList.sol");
 
 module.exports = function(deployer) {
-  deployer.link(MetaCoin);
-  deployer.deploy(MetaCoin);
+  deployer.deploy(TodoList);
 };
